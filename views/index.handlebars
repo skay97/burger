@@ -1,0 +1,27 @@
+{{!-- <img src="https://images.all-free-download.com/images/graphiclarge/cheese_burger_clip_art_23239.jpg"> --}}
+
+<ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    <li>
+
+        {{burger_name }}
+
+    </li>
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    <li>
+
+        {{burger_name}}
+
+    </li>
+    {{/if}}
+
+    {{/each}}
+
+</ul>
